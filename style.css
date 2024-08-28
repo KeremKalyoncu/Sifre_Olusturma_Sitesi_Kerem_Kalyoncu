@@ -7,11 +7,11 @@ html, body {
 body {
   font-family: "Staatliches", cursive;
   font-size: 20px;
-  background-image: url("./wallpaperflare.com_wallpaper.jpg"); /* Arka plan resmi buraya gelecek */
-  background-size: cover; /* Resmi ekranı kaplayacak şekilde ölçeklendirir */
-  background-repeat: no-repeat; /* Resmin tekrarlamasını engeller */
-  background-position: center; /* Resmi ekranın ortasına yerleştirir */
-  background-attachment: fixed; /* Arka planı sayfada sabitler */
+  background-image: url("./wallpaperflare.com_wallpaper.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed; 
 }
 html {
   height: 100%;
@@ -49,7 +49,7 @@ button {
   width: 60px;
   text-align: center;
   font-size: 18px;
-  margin-top: -17px; /* Numeric input'u metnin altına yerleştirir */
+  margin-top: -17px;
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.218);
   border-radius: 10%;
