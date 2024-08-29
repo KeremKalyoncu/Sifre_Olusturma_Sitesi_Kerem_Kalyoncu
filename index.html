@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerem Kalyoncu Şifre Oluşturucu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="passwordlen">
+            <p>Şifre Uzunluğu</p>
+            <input type="number" id="passwordLength" min="5" max="20" value="5">
+        </div>
+        
+        <div id="passwordBox">
+            <p id="password"></p>
+        </div>
+        <button type="button" onclick="createPassword()" class="btn">Şifre Oluştur</button>
+        <div id="passwordlen2">
+            <p><a href="https://www.passwordmonster.com" target="_blank">Şıfre Kontrol</a></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('passwordLength').addEventListener('input', function() {
+            const input = this;
+            let value = parseInt(input.value, 10);
+
+            if (value > 20) {
+                input.value = 20;
+            } else if (value < 5) {
+                input.value = 5;
+            }
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+    

@@ -14,7 +14,7 @@ String.prototype.shuffle = function () {
 }
 function createPassword() {
     var sifre = "";
-    var karakter = "1234567890*-/+qwertyuıopğüişlkjhgfdsazxcvbnmöç.;é!'^+%&/()=?_>£#$½{[]}<|QWERTYUIOPĞÜİŞLKJHGFDSAZXCVBNMÖÇ"
+    var karakter = "1234567890*-/+qwertyuıopşlkjhgfdsazxcvbnm.;é!'^+%&/()=?_>£#$½{[]}<|QWERTYUIOPŞLKJHGFDSAZXCVBNM"
     var karakteruzunluk = karakter.length;
 
     for (var i = 0; i < len.value; i++) {
