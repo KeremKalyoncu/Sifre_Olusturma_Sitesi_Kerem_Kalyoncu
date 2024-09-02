@@ -19,9 +19,13 @@ html {
 
 button {
   height: 40px;
-  width: 40px;
-  font-family: "Staatliches", cursive;
-  font-size: 15px;
+    width: 52px;
+    font-family: "Staatliches", cursive;
+    font-size: 15px;
+    background-color: rgb(162 128 128 / 52%);
+    border-radius: 7px;
+    border-width: 0;
+    z-index: 1;
 }
 
 .container {
@@ -78,6 +82,7 @@ button {
   width: auto;
   margin-bottom: 10px;
   margin-top: 10px;
+  z-index: 0;
 }
 
 #passwordBox p {
@@ -86,11 +91,27 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+#kopyalama {
+  margin-left: 260px;
+    margin-top: 100px;
+}
+img {
+  width: 39px;
+    margin-bottom: auto;
+    margin-left: 261px;
+    margin-top: 6px;
+}
 #password {
   font-size: 17px;
+  background-color: rgba(162, 154, 154, 0.00);
 }
-
+#passwordtext {
+  top: 16%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
 .btn {
   position: fixed;
   top: 70%;
@@ -101,6 +122,7 @@ button {
   border-width: 0;
   background-color: rgba(162, 154, 154, 0.518);
 }
+
 
 .btn:active {
   height: 38px;

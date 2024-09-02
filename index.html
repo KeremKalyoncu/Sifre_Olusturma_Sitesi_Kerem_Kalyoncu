@@ -21,7 +21,14 @@
         </div>
         
         <div id="passwordBox">
-            <p id="password"></p>
+            <div id="passwordtext">
+                <input id="password" readonly style="border: 0cap;"></input>
+            </div>
+            
+        </div>
+        <div id="kopyalama">
+            <button onclick=GeeksForGeeks()  id="abab">Kopyala</button>
+            
         </div>
         <button type="button" onclick="createPassword()" class="btn">Şifre Oluştur</button>
         <div id="passwordlen2">
@@ -41,6 +48,24 @@
         });
     </script>
     <script src="main.js"></script>
+    <script>
+        function GeeksForGeeks() {
+    /* Get the text field */
+    let copyGfGText = document.getElementById("password");
+    
+    /* Select the text field */
+    copyGfGText.select();
+    
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+        
+    /* Use below command to access the 
+       value of copied text */
+    console.log(copyGfGText.value);
+}
+
+
+    </script>
 </body>
 </html>
 

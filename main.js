@@ -21,7 +21,7 @@ function createPassword() {
         karakter = karakter.shuffle();
         sifre += karakter.charAt(Math.floor(Math.random() * karakteruzunluk));
     }
-    password.textContent = sifre;
+    password.value = sifre;
     password.style.color = "black";
     passCopy.value = sifre;
 
