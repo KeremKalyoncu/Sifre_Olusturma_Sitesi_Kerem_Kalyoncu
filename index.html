@@ -13,11 +13,7 @@
     <div class="container">
         <div id="passwordlen">
             <p>Şifre Uzunluğu</p>
-<<<<<<< HEAD
-            <input type="number" id="passwordLength" min="5" max="20" value="5">
-=======
             <input type="number" id="passwordLength" min="0" maxlength="2" max="36" value="5">
->>>>>>> feb0d55fcc8dab1fcddc528fc39678b3aa56430e
         </div>
         
         <div id="passwordBox">
@@ -42,8 +38,8 @@
 
             if (value > 20) {
                 input.value = 20;
-            } else if (value < 5) {
-                input.value = 5;
+            } else if (value < 1) {
+                input.value = 1;
             }
         });
     </script>
